@@ -142,7 +142,6 @@ window.onload = function() {
 
     setTimeout(function() {
         if (cookie == null) {
-            document.getElementById("last-consent-state").innerHTML = config.text.textNotPresent;
             document.getElementById("gdpr-commons-modal-overlay").classList.remove('fadeOUT-display');
             document.getElementById("gdpr-commons-modal").classList.remove('fadeOUT-display');
             document.getElementById("gdpr-commons-modal-overlay").classList.add('fadeIN-display');
