@@ -4,8 +4,6 @@
  * LINK: https://www.gdprcommons.it
  */
 
-import "./gdpr.commons.css";
-
 function eraseCookie(name) {
     document.cookie = name + '=; Max-Age=-99999999;';
 }

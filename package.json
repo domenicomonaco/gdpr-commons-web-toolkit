@@ -3,7 +3,7 @@
     "slug": "gdpr-commons-web-toolkit",
     "version": "0.1.0",
     "description": "GDPR Commons Web Toolkit",
-    "main": "index.html",
+    "main": "src/index.html",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/domenicomonaco/gdpr-commons-web-toolkit.git"
@@ -26,8 +26,8 @@
     },
     "homepage": "https://www.gdprcommons.it",
     "scripts": {
-        "start": "parcel index.html --open",
-        "build": "parcel build --no-content-hash index.html src/*"
+        "start": "parcel src/index.html --open",
+        "build": "parcel build --no-content-hash src/index.html src/*"
     },
     "dependencies": {},
     "devDependencies": {
