@@ -5,10 +5,7 @@
 This is refactoring of: 
 [GDPR COMMONS CODE](https://github.com/domenicomonaco/gdpr-commons/tree/main/_js-plug-in)
 
-### Sponsored by
-[<img align="left" style="margin:5px" src="http://cdn.tecnologieperpersone.it/img/dmonaco_happy_hacking.png" height="32" />](https://blog.domenicomonaco.it)
-
-[<img style="margin:5px;" src="http://cdn.tecnologieperpersone.it/img/tecnologie-per-persone-logo.png" height="32" />](https://tecnologieperpersone.it)
+## [DEMO]{https://domenicomonaco.github.io/gdpr-commons-web-toolkit/}
 
 ## Cos'è "GDPR Commons"
 
@@ -23,3 +20,8 @@ GRPD Commones Code contiene alcune parti JavaScript e HTML utilizzabili nel prop
 
 Il codice di "GDPR COMMONS CODE" è distribuito attraverso licenza MIT.
 Copyright (c) 2022 Tecnologie per Persone di Domenico Monaco <domenico@tecnologieperpersone.it>
+
+### Sponsored by
+[<img align="left" style="margin:5px" src="http://cdn.tecnologieperpersone.it/img/dmonaco_happy_hacking.png" height="32" />](https://blog.domenicomonaco.it)
+
+[<img style="margin:5px;" src="http://cdn.tecnologieperpersone.it/img/tecnologie-per-persone-logo.png" height="32" />](https://tecnologieperpersone.it)
