@@ -27,7 +27,7 @@
     "homepage": "https://www.gdprcommons.it",
     "scripts": {
         "start": "parcel src/index.html --open",
-        "build": "parcel build --no-content-hash src/index.html src/*"
+        "build": "parcel build --no-content-hash src/index.html src/* -d docs" 
     },
     "dependencies": {},
     "devDependencies": {
