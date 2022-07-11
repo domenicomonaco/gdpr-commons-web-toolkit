@@ -27,7 +27,7 @@
     "homepage": "https://www.gdprcommons.it",
     "scripts": {
         "start": "parcel src/index.html --open",
-        "build": "parcel build --no-content-hash src/index.html src/* -d docs" 
+        "build": "parcel build --public-url 'https://domenicomonaco.github.io/gdpr-commons-web-toolkit/' --no-content-hash src/index.html src/* -d docs" 
     },
     "dependencies": {},
     "devDependencies": {
