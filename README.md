@@ -5,7 +5,7 @@
 This is refactoring of: 
 [GDPR COMMONS CODE](https://github.com/domenicomonaco/gdpr-commons/tree/main/_js-plug-in)
 
-## [DEMO]{https://domenicomonaco.github.io/gdpr-commons-web-toolkit/}
+## [DEMO](https://domenicomonaco.github.io/gdpr-commons-web-toolkit/)
 
 ## Cos'è "GDPR Commons"
 
