@@ -87,11 +87,15 @@ window.onload = function() {
       <a href="${GDPRCOMMONS.getAttribute('data-urlpolicy')}">${config.text.textButtonOpenPolicy}</a>
     </div>
 
-    <div class="gdpr-commons-modal-footer">
-    <button id="gdpr-commons-button-reset" class="buttons">${config.text.textButtonResetCookie}</button>
-    <button id="gdpr-commons-button-accept" class="buttons">${config.text.textButtonAccept}</button>
+      <div class="gdpr-commons-modal-footer">
+        <button id="gdpr-commons-button-reset" class="buttons">${config.text.textButtonResetCookie}</button>
+         <button id="gdpr-commons-button-accept" class="buttons">${config.text.textButtonAccept}</button>
+    </div>
+    <div id="gdpr-commons-modal-credits">
+    <span>Prowdly by <a title="GDPR Commons: Open Source GDPR Tookit" target="_blank" href="https://www.gdprcommons.it">GDPR Commons: Open Source GDPR Tookit</a></spans>
     </div>
   </div>
+
   </div>`;
 
 

@@ -146,3 +146,14 @@
     background-color: #000;
     color: #fec330;
 }
+
+#GDPR_Commons #gdpr-commons-modal-credits{
+    font-size: 0.8rem;
+    background-color: #eaeaea;
+    margin: 1rem 0px 0px 0px;
+    position: absolute;
+    color: #6e6a6a;
+    padding: 4px;
+    bottom: -2rem;
+    left: 0rem;
+}
