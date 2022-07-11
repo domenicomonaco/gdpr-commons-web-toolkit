@@ -92,12 +92,11 @@ window.onload = function() {
          <button id="gdpr-commons-button-accept" class="buttons">${config.text.textButtonAccept}</button>
     </div>
     <div id="gdpr-commons-modal-credits">
-        <span>Prowdly by <a title="GDPR Commons: Open Source GDPR Tookit" target="_blank" href="https://www.gdprcommons.it">GDPR Commons: Open Source GDPR Tookit</a></spans>
+        <span>Proudly <a title="GDPR Commons: Open Source GDPR Tookit" target="_blank" href="https://www.gdprcommons.it">GDPR Commons: Open Source GDPR Tookit</a></spans>
     </div>
   </div>
 
   </div>`;
-
 
     let cookieValue = {
         date: null,
