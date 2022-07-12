@@ -56,6 +56,9 @@ const config = {
 window.onload = function () {
 
     const GDPRCOMMONS = document.getElementById("GDPR_Commons");
+    const dataurlpolicy= GDPRCOMMONS.getAttribute('data-urlpolicy');
+    const linkprivacy= (dataurlpolicy==null)?config.text.linkPrivacyPolicy:dataurlpolicy;
+
     GDPRCOMMONS.innerHTML = `
   <div id="gdpr-commons-fixedicon">
     <a href="#GDPRCommons-dialog" id="gdpr-commons-button-fixedicon" class="fixedicon" aria-label="Open Cookie Notice">
@@ -80,7 +83,7 @@ window.onload = function () {
       <div>
       <span id="last-consent-state"></span> <em><span id="last-consent-date"></span></em>
       </div>
-      <a href="${GDPRCOMMONS.getAttribute('data-urlpolicy')}">${config.text.textButtonOpenPolicy}</a>
+      <a href="${linkprivacy}">${config.text.textButtonOpenPolicy}</a>
     </div>
 
       <div class="gdpr-commons-modal-footer">
@@ -127,7 +130,6 @@ window.onload = function () {
 
     document.getElementById("gdpr-commons-button-fixedicon").addEventListener('click',
         function () {
-            console.log('open');
             document.getElementById("gdpr-commons-modal-overlay").classList.remove('fadeOUT-display');
             document.getElementById("gdpr-commons-modal").classList.remove('fadeOUT-display');
             document.getElementById("gdpr-commons-modal-overlay").classList.add('fadeIN-display');
