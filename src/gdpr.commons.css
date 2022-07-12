@@ -1,8 +1,4 @@
-/**
- * AUTHOR: Tecnologie per Persone di Domenico Monaco 
- * LICENSE: MIT 
- * LINK: https://www.gdprcommons.it
- */
+/** AUTHOR: Tecnologie per Persone di Domenico Monaco - LICENSE: MIT - LINK: https://www.gdprcommons.it */
 
 #GDPR_Commons {
     font-family: 'Trebuchet MS', sans-serif;
@@ -34,7 +30,7 @@
     border-radius: 0.5em;
     left: 50%;
     max-width: 80%;
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 50em;
@@ -95,6 +91,7 @@
         opacity: 1;
         visibility: visible;
     }
+
     100% {
         opacity: 0;
         visibility: hidden;
@@ -106,6 +103,7 @@
         opacity: 0;
         visibility: hidden;
     }
+
     100% {
         opacity: 1;
         visibility: visible;
@@ -147,7 +145,7 @@
     color: #fec330;
 }
 
-#GDPR_Commons #gdpr-commons-modal-credits{
+#GDPR_Commons #gdpr-commons-modal-credits {
     font-size: 0.8rem;
     background-color: #eaeaea;
     margin: 1rem 0px 0px 0px;

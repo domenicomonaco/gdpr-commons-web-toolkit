@@ -1,8 +1,4 @@
-/**
- * AUTHOR: Tecnologie per Persone di Domenico Monaco 
- * LICENSE: MIT 
- * LINK: https://www.gdprcommons.it
- */
+/** AUTHOR: Tecnologie per Persone di Domenico Monaco - LICENSE: MIT - LINK: https://www.gdprcommons.it */
 
 function eraseCookie(name) {
     document.cookie = name + '=; Max-Age=-99999999;';
@@ -57,7 +53,7 @@ const config = {
     }
 };
 
-window.onload = function() {
+window.onload = function () {
 
     const GDPRCOMMONS = document.getElementById("GDPR_Commons");
     GDPRCOMMONS.innerHTML = `
@@ -105,7 +101,7 @@ window.onload = function() {
 
     let cookie = getCookie(config.text.cookieName);
 
-    document.getElementById("gdpr-commons-button-accept").addEventListener('click', function() {
+    document.getElementById("gdpr-commons-button-accept").addEventListener('click', function () {
         cookieValue = {
             date: Date(),
             accepted: true,
@@ -119,7 +115,7 @@ window.onload = function() {
         document.getElementById("gdpr-commons-modal").classList.remove('fadeIN-display');
     });
 
-    document.getElementById("gdpr-commons-button-reset").addEventListener('click', function() {
+    document.getElementById("gdpr-commons-button-reset").addEventListener('click', function () {
         cookieValue = {
             date: Date(),
             accepted: false,
@@ -130,7 +126,7 @@ window.onload = function() {
     });
 
     document.getElementById("gdpr-commons-button-fixedicon").addEventListener('click',
-        function() {
+        function () {
             console.log('open');
             document.getElementById("gdpr-commons-modal-overlay").classList.remove('fadeOUT-display');
             document.getElementById("gdpr-commons-modal").classList.remove('fadeOUT-display');
@@ -138,7 +134,7 @@ window.onload = function() {
             document.getElementById("gdpr-commons-modal").classList.add('fadeIN-display');
         });
 
-    setTimeout(function() {
+    setTimeout(function () {
         if (cookie == null) {
             document.getElementById("gdpr-commons-modal-overlay").classList.remove('fadeOUT-display');
             document.getElementById("gdpr-commons-modal").classList.remove('fadeOUT-display');
