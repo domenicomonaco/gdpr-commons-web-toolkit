@@ -57,7 +57,8 @@ window.onload = function () {
 
     const GDPRCOMMONS = document.getElementById("GDPR_Commons");
     const dataurlpolicy= GDPRCOMMONS.getAttribute('data-urlpolicy');
-    const linkprivacy= (dataurlpolicy==null)?config.text.linkPrivacyPolicy:dataurlpolicy;
+    const linkprivacy= (dataurlpolicy==null)?config.text.linkPrivacyPolicy:dataurlpolicy+'?source=www.gdprcommons.it';
+
 
     GDPRCOMMONS.innerHTML = `
   <div id="gdpr-commons-fixedicon">
