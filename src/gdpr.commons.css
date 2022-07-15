@@ -71,17 +71,17 @@
 }
 
 #GDPR_Commons #gdpr-commons-modal.fadeIN-display {
-    -webkit-animation: animateIN 700ms;
+    -webkit-animation: animateIN 900ms;
     /* Chrome, Safari, Opera */
-    animation: animateIN 700ms;
+    animation: animateIN 900ms;
     visibility: visible;
     opacity: 1;
 }
 
 #GDPR_Commons #gdpr-commons-modal.fadeOUT-display {
-    -webkit-animation: animateOUT 700ms;
+    -webkit-animation: animateOUT 900ms;
     /* Chrome, Safari, Opera */
-    animation: animateOUT 700ms;
+    animation: animateOUT 900ms;
     visibility: hidden;
     opacity: 0;
 }
@@ -110,12 +110,32 @@
     }
 }
 
+
 #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-middle,
 #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-footer,
 #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 320px) {
+
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-middle,
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-footer,
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-middle>*,
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-footer>*,
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header>* {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header .gdpr-commons-modal-title h3 {

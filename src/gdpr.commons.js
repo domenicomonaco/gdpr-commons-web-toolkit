@@ -56,8 +56,8 @@ const config = {
 window.onload = function () {
 
     const GDPRCOMMONS = document.getElementById("GDPR_Commons");
-    const dataurlpolicy= GDPRCOMMONS.getAttribute('data-urlpolicy');
-    const linkprivacy= (dataurlpolicy==null)?config.text.linkPrivacyPolicy:dataurlpolicy+'?source=www.gdprcommons.it';
+    const dataurlpolicy = GDPRCOMMONS.getAttribute('data-urlpolicy');
+    const linkprivacy = (dataurlpolicy == null) ? config.text.linkPrivacyPolicy : dataurlpolicy + '?source=www.gdprcommons.it';
 
 
     GDPRCOMMONS.innerHTML = `
@@ -106,20 +106,22 @@ window.onload = function () {
     let cookie = getCookie(config.text.cookieName);
 
     document.getElementById("gdpr-commons-button-accept").addEventListener('click', function () {
+
         cookieValue = {
             date: Date(),
             accepted: true,
         };
+
         setCookie(config.text.cookieName, cookieValue, config.text.cookieDaysExp);
-        console.log('Accepted');
+
         document.getElementById("gdpr-commons-modal-overlay").classList.add('fadeOUT-display');
         document.getElementById("gdpr-commons-modal").classList.add('fadeOUT-display');
-
         document.getElementById("gdpr-commons-modal-overlay").classList.remove('fadeIN-display');
         document.getElementById("gdpr-commons-modal").classList.remove('fadeIN-display');
     });
 
     document.getElementById("gdpr-commons-button-reset").addEventListener('click', function () {
+
         cookieValue = {
             date: Date(),
             accepted: false,
@@ -136,6 +138,15 @@ window.onload = function () {
             document.getElementById("gdpr-commons-modal-overlay").classList.add('fadeIN-display');
             document.getElementById("gdpr-commons-modal").classList.add('fadeIN-display');
         });
+
+
+    var eraser = document.getElementsByClassName('eraseCookieGDPR');
+    for (var i = 0; i < eraser.length; i++) {
+        eraser[i].addEventListener('click', function () {
+            console.warn(config.text.cookieName, 'erased');
+            eraseCookie(config.text.cookieName);
+        });
+    }
 
     setTimeout(function () {
         if (cookie == null) {
@@ -154,10 +165,10 @@ window.onload = function () {
                 document.getElementById("gdpr-commons-modal").classList.add('fadeIN-display');
             }
             if (cookie.date != null) {
-                document.getElementById("last-consent-date").innerHTML = new Date(cookie.date).toDateString();
+                document.getElementById("last-consent-date").innerHTML = new Date(cookie.date).toUTCString();
             } else {
                 document.getElementById("last-consent-date").innerHTML = '0:00:00'
             }
         }
-    }, 2000);
+    }, 150);
 };
