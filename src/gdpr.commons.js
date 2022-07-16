@@ -44,7 +44,7 @@ const config = {
         textButtonResetCookie: "Resetta preferenze",
         textCredits: "GDPRCommons.it",
         textVersion: "v0.1.0",
-        textLicense: "GPL v3"
+        textLicense: "MIT"
         
     }
 };
