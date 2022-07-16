@@ -42,14 +42,10 @@ const config = {
         textNotAccepted: "Non accettato",
         textNotPresent: "Nessun dato",
         textButtonResetCookie: "Resetta preferenze",
-    },
-
-    modal: {
-        showOnPageLoad: 'cookie',
-    },
-
-    fixedicon: {
-        show: true
+        textCredits: "GDPRCommons.it",
+        textVersion: "v0.1.0",
+        textLicense: "GPL v3"
+        
     }
 };
 
@@ -82,17 +78,18 @@ window.onload = function () {
 
     <div class="gdpr-commons-modal-middle">
       <div>
-      <span id="last-consent-state"></span> <em><span id="last-consent-date"></span></em>
+        <span id="last-consent-state"></span> <em><span id="last-consent-date"></span></em>
       </div>
       <a href="${linkprivacy}">${config.text.textButtonOpenPolicy}</a>
     </div>
 
       <div class="gdpr-commons-modal-footer">
         <button id="gdpr-commons-button-reset" class="buttons">${config.text.textButtonResetCookie}</button>
-         <button id="gdpr-commons-button-accept" class="buttons">${config.text.textButtonAccept}</button>
+        <button id="gdpr-commons-button-accept" class="buttons">${config.text.textButtonAccept}</button>
     </div>
     <div id="gdpr-commons-modal-credits">
-        <span>Proudly <a title="GDPR Commons: Open Source GDPR Tookit" target="_blank" href="https://www.gdprcommons.it">GDPR Commons: Open Source GDPR Tookit</a></spans>
+        <span>Proudly <a title="${config.text.textCredits}" target="_blank" href="https://www.gdprcommons.it">
+        ${config.text.textCredits}</a> ${config.text.textLicense} - ${config.text.textVersion} </spans>
     </div>
   </div>
 
@@ -105,6 +102,20 @@ window.onload = function () {
 
     let cookie = getCookie(config.text.cookieName);
 
+    function hideViews() {
+        document.getElementById("gdpr-commons-modal-overlay").classList.add('fadeOUT-display');
+        document.getElementById("gdpr-commons-modal").classList.add('fadeOUT-display');
+        document.getElementById("gdpr-commons-modal-overlay").classList.remove('fadeIN-display');
+        document.getElementById("gdpr-commons-modal").classList.remove('fadeIN-display');
+    }
+
+    function showViews() {
+        document.getElementById("gdpr-commons-modal-overlay").classList.remove('fadeOUT-display');
+        document.getElementById("gdpr-commons-modal").classList.remove('fadeOUT-display');
+        document.getElementById("gdpr-commons-modal-overlay").classList.add('fadeIN-display');
+        document.getElementById("gdpr-commons-modal").classList.add('fadeIN-display');
+    }
+
     document.getElementById("gdpr-commons-button-accept").addEventListener('click', function () {
 
         cookieValue = {
@@ -113,11 +124,10 @@ window.onload = function () {
         };
 
         setCookie(config.text.cookieName, cookieValue, config.text.cookieDaysExp);
+        document.getElementById("last-consent-state").innerHTML = config.text.textAccepted;
+        document.getElementById("last-consent-date").innerHTML = new Date(cookieValue.date).toLocaleDateString();
 
-        document.getElementById("gdpr-commons-modal-overlay").classList.add('fadeOUT-display');
-        document.getElementById("gdpr-commons-modal").classList.add('fadeOUT-display');
-        document.getElementById("gdpr-commons-modal-overlay").classList.remove('fadeIN-display');
-        document.getElementById("gdpr-commons-modal").classList.remove('fadeIN-display');
+       setTimeout(hideViews(),1500);
     });
 
     document.getElementById("gdpr-commons-button-reset").addEventListener('click', function () {
@@ -126,19 +136,15 @@ window.onload = function () {
             date: Date(),
             accepted: false,
         };
-        console.log('Reset');
+
         setCookie(config.text.cookieName, cookieValue, config.text.cookieDaysExp);
         location.reload();
     });
 
     document.getElementById("gdpr-commons-button-fixedicon").addEventListener('click',
         function () {
-            document.getElementById("gdpr-commons-modal-overlay").classList.remove('fadeOUT-display');
-            document.getElementById("gdpr-commons-modal").classList.remove('fadeOUT-display');
-            document.getElementById("gdpr-commons-modal-overlay").classList.add('fadeIN-display');
-            document.getElementById("gdpr-commons-modal").classList.add('fadeIN-display');
+            showViews();
         });
-
 
     var eraser = document.getElementsByClassName('eraseCookieGDPR');
     for (var i = 0; i < eraser.length; i++) {
@@ -150,24 +156,19 @@ window.onload = function () {
 
     setTimeout(function () {
         if (cookie == null) {
-            document.getElementById("gdpr-commons-modal-overlay").classList.remove('fadeOUT-display');
-            document.getElementById("gdpr-commons-modal").classList.remove('fadeOUT-display');
-            document.getElementById("gdpr-commons-modal-overlay").classList.add('fadeIN-display');
-            document.getElementById("gdpr-commons-modal").classList.add('fadeIN-display');
+            showViews();
         } else {
+            if (cookie.date != null) {
+                document.getElementById("last-consent-date").innerHTML = new Date(cookie.date).toLocaleDateString();
+            } else {
+                document.getElementById("last-consent-date").innerHTML = '0:00:00'
+            }
+
             if (cookie.accepted != null && cookie.accepted == true) {
                 document.getElementById("last-consent-state").innerHTML = config.text.textAccepted;
             } else {
                 document.getElementById("last-consent-state").innerHTML = config.text.textNotAccepted;
-                document.getElementById("gdpr-commons-modal-overlay").classList.remove('fadeOUT-display');
-                document.getElementById("gdpr-commons-modal").classList.remove('fadeOUT-display');
-                document.getElementById("gdpr-commons-modal-overlay").classList.add('fadeIN-display');
-                document.getElementById("gdpr-commons-modal").classList.add('fadeIN-display');
-            }
-            if (cookie.date != null) {
-                document.getElementById("last-consent-date").innerHTML = new Date(cookie.date).toUTCString();
-            } else {
-                document.getElementById("last-consent-date").innerHTML = '0:00:00'
+                showViews();
             }
         }
     }, 150);

@@ -36,6 +36,7 @@
     width: 50em;
     text-align: left;
     padding: 1.5em;
+    padding-bottom: 0.5em;
     max-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -149,13 +150,9 @@
 
 #GDPR_Commons #gdpr-commons-modal-credits {
     font-size: 0.8rem;
-    background-color: #eaeaea;
     margin: 1rem 0px 0px 0px;
-    position: absolute;
     color: #6e6a6a;
-    padding: 4px;
-    bottom: -2rem;
-    left: 0rem;
+    width: 100%;
 }
 
 @media screen and (max-width: 420px) {
