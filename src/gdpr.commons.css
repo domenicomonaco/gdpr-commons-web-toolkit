@@ -119,24 +119,6 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 420px) {
-
-    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-middle,
-    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-footer,
-    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header {
-        display: flex;
-        flex-direction: column;
-        gap: 0.6rem;
-    }
-
-    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-middle>*,
-    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-footer>*,
-    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header>* {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-}
 
 #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header .gdpr-commons-modal-title h3 {
     margin: 0px;
@@ -174,4 +156,23 @@
     padding: 4px;
     bottom: -2rem;
     left: 0rem;
+}
+
+@media screen and (max-width: 420px) {
+
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-middle,
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-footer,
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-middle>*,
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-footer>*,
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header>* {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
