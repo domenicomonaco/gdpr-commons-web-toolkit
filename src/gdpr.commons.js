@@ -2,7 +2,7 @@
 
 function eraseCookie(name) {
     document.cookie = name + '=; Max-Age=-99999999;';
-    document.cookie = null;
+    document.cookie =  name + '=; Max-Age=null;';
 }
 
 function setCookie(name, value, days) {
