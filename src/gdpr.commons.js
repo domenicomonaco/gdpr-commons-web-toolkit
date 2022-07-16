@@ -1,7 +1,9 @@
 /** AUTHOR: Tecnologie per Persone di Domenico Monaco - LICENSE: MIT - LINK: https://www.gdprcommons.it */
 
 function eraseCookie(name) {
-    document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT';
+    cookieValue = null;
+    setCookie(config.text.cookieName, cookieValue, null);
+    document.cookie = name + '=; Max-Age=-99999999;';
 }
 
 function setCookie(name, value, days) {
