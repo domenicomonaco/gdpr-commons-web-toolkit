@@ -15,6 +15,7 @@ Il repository **GDPR Web Toolkit** fa parte del progetto [GDPR COMMONS](https://
 
 
 ## Come usarlo
+
 ### Da cdn
 
 Basepath versione corrente: [https://domenicomonaco.github.io/gdpr-commons-web-toolkit/0.1.0/](https://domenicomonaco.github.io/gdpr-commons-web-toolkit/0.1.0/)
