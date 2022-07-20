@@ -6,8 +6,7 @@
 
 ## GDPR Web Toolkit
 
-Questo repository contiene alcuni file JS, HTML e CSS di utilità per la compliance GPDR di applicazioni web-based. Questo repository è un refactoring di
-[GDPR COMMONS CODE](https://github.com/domenicomonaco/gdpr-commons/tree/main/_js-plug-in)
+Questo repository contiene alcuni file JS, HTML e CSS di utilità per la compliance GPDR di applicazioni web-based.
 
 #### Cos'è "GDPR Commons"
 
