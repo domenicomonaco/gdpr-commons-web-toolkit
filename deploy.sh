@@ -5,3 +5,4 @@ git add .
 git commit -m $param1
 git fetch
 git push
+git pull
