@@ -1,16 +1,19 @@
-# [GDPR COMMONS CODE](https://www.gdprcommons.it) Web Toolkit
+# <img align="left" style="margin:5px" src="_icon/logo/logo-gdpr-commons-64.png?raw=true" height="42" /> [GDPR COMMONS WEB TOOKIT](https://www.gdprcommons.it)
 
-[info@gdprcommons.it](mailto:info@gdprcommons.it)
+**Informative Privacy e Policy GDPR semplificate**
 
-## [DEMO](https://domenicomonaco.github.io/gdpr-commons-web-toolkit/)
+
+Contatti: [info@gdprcommons.it](mailto:info@gdprcommons.it)
+Web site: [www.gdprcommons.it](https://www.gdprcommons.it)
+
+------
+Avvia la [DEMO](https://domenicomonaco.github.io/gdpr-commons-web-toolkit/)
+
+----
 
 ## GDPR Web Toolkit
 
-Questo repository contiene alcuni file JS, HTML e CSS di utilità per la compliance GPDR di applicazioni web-based.
-
-#### Cos'è "GDPR Commons"
-
-Il repository **GDPR Web Toolkit** fa parte del progetto [GDPR COMMONS](https://www.gdprcommons.it), e contribuisce all'obiettivo di favorire la diffusione di modelli di Informative GPDR e Privacy Policy semplificate e comprensibili liberamente riutilizzabili.
+Questo repository contiene componenti Web / UI basati su JS, HTML e CSS per il progetto [GDPR COMMONS](https://www.gdprcommons.it).
 
 
 ## Come usarlo
