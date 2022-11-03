@@ -35,14 +35,15 @@
     background: #ffffff;
     border-radius: 0.5em;
     left: 50%;
-    max-width: 80%;
+
     position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 50em;
+    width: 70%;
+    max-width: 470px;
     text-align: left;
-    padding: 1.5em;
-    padding-bottom: 0.5em;
+    padding: 15px;
+    padding-bottom: 7px;
     max-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -148,7 +149,7 @@
     border-radius: 0.3rem;
     border: none;
     cursor: pointer;
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 15px;
     background-color: #fec330;
 }
 
@@ -160,7 +161,7 @@
 
 #GDPR_Commons #gdpr-commons-modal-credits {
     font-size: 0.8rem;
-    margin: 1rem 0px 0px 0px;
+    margin: 15px 0px 0px 0px;
     color: #6e6a6a;
     width: 100%;
 }
