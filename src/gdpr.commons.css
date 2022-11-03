@@ -184,4 +184,8 @@
         width: 100%;
         text-align: center;
     }
+
+    #GDPR_Commons #gdpr-commons-modal-credits{
+        text-align: center;
+    }
 }
