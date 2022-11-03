@@ -177,13 +177,10 @@
 
     #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-middle > *,
     #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-footer > *,
-    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header > * {
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header > *,
+    #GDPR_Commons #gdpr-commons-modal-credits {
         display: block;
         width: 100%;
-        text-align: center;
-    }
-
-    #GDPR_Commons #gdpr-commons-modal-credits {
         text-align: center;
     }
 }

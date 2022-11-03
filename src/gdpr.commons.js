@@ -80,7 +80,8 @@ window.onload = function () {
 
     <div class="gdpr-commons-modal-middle">
       <div>
-        <span id="last-consent-state"></span> <em><span id="last-consent-date"></span></em>
+        <span id="last-consent-state">
+        </span> <em><span id="last-consent-date"></span></em>
       </div>
       <a href="${linkprivacy}">${config.text.textButtonOpenPolicy}</a>
     </div>
@@ -90,7 +91,7 @@ window.onload = function () {
     </div>
     <div id="gdpr-commons-modal-credits">
         <span><a title="${config.text.textCredits}" target="_blank" href="https://www.gdprcommons.it">
-        ${config.text.textCredits}</a> ${config.text.textLicense}
+        ${config.text.textCredits}</a>
     </div>
   </div>
 
