@@ -117,7 +117,6 @@
     }
 }
 
-
 #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-middle,
 #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-footer,
 #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header {
@@ -125,7 +124,6 @@
     align-items: center;
     justify-content: space-between;
 }
-
 
 #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header .gdpr-commons-modal-title h3 {
     margin: 0px;
@@ -177,9 +175,9 @@
         gap: 0.6rem;
     }
 
-    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-middle>*,
-    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-footer>*,
-    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header>* {
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-middle > *,
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-footer > *,
+    #GDPR_Commons #gdpr-commons-modal .gdpr-commons-modal-header > * {
         display: block;
         width: 100%;
         text-align: center;
